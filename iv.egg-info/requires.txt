@@ -1,0 +1,8 @@
+docopt
+gitpython
+ftputil
+
+[test]
+coverage
+pytest
+pytest-cov

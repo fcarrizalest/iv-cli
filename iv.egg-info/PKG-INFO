@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: iv
+Version: 0.1.1
+Summary: A skeleton command line program in Python.
+Home-page:  
+Author: Francisco Carrizales
+Author-email: fcarrizalest@gmail.com
+License: MIT
+Description: ALg oasdf
+Keywords: cli
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
