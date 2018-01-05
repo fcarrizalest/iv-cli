@@ -169,10 +169,12 @@ class Deploy(Base):
                 if ref.name ==  self.options['<brandname>'] :
                     archivos = []
                     for ar in hcommit.diff( ref.commit ):
-                        archivos.append( str(ar.a_path) )
+                        print(ar)
+                        if not ar.deleted_file:
+                            archivos.append( str(ar.a_path) )
                     ref.checkout()
                     with open( tar_file  , 'wb') as fp:
-                        repo.archive(fp ,treeish=ref, path = archivos )
+                        cloned_repo.archive(fp ,treeish=ref, path = archivos )
 
             
 
